@@ -2,10 +2,26 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.content{
+    width: 100vw;
+    height: 100vh;
+}
 .picture{
     background-image: url(./zelda-albt.jpg);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
     width: 40vw;
+}
+
+.right{
+    float:right;
+    width: 300px;
+    border: 3vw solid #73ad21;
+    padding: 5vw;
+    font-size: 1.2rem;
+}
+
+.description-text{
+    width:;
 }
