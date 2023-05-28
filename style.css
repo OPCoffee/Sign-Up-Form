@@ -1,6 +1,12 @@
+@font-face{
+    font-family: Hylia;
+    src: url(./HyliaSerifBeta-Regular.otf) format("opentype");
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Hylia, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    color:antiquewhite;
 }
 
 html, body{
@@ -35,16 +41,49 @@ html, body{
     align-items: center;
 }
 
-.right{
-    width: 75vw;
-    margin: 0;
-    border: 2vw solid #8ac735;
-    padding: 16vw;
-    font-size: 1.2em;
-    flex-flow: column nowrap;
+.Hylia{
+    color:black;
+    font-size: 4rem;
 }
 
-.form{
+.right{
+    width: 75vw;
+    border: 2vw solid #168b8f;
+    padding: 10vw;
+    font-size: 2em;
+    flex-flow: column nowrap;
+    background-color: #114747;
+    justify-content: center;
+    
+}
+
+.description-text{
+    font-size: 2.5rem;
+    width: 90%;
+}
+
+.forms{
     display: flex;
+    align-items: center;
     flex-flow: row wrap;
+    padding-bottom: 1vh;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.5rem;
+    width: 45%;
+}
+
+.bottom-text{
+    font-size:1.4rem;
+    padding-top:1vh;
+}
+
+button{
+    background:#114747;
+    font-size: 1.5rem;
+    border-radius: 10px;
 }
