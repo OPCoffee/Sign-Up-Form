@@ -3,6 +3,10 @@
     src: url(./HyliaSerifBeta-Regular.otf) format("opentype");
 }
 
+:root{
+    --color:rgba(23, 175, 168, 0.7);
+}
+
 * {
     font-family: Hylia, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -32,7 +36,7 @@ html, body{
 }
 .logo{
     height: 20vh;
-    background-color: rgba(23, 175, 168, 0.7);
+    background-color: var(--color);
     position: relative;
     top: 20vh;
     gap: 1vw;
@@ -48,7 +52,7 @@ html, body{
 
 .right{
     width: 75vw;
-    border: 2vw solid #168b8f;
+    border: 2vw solid var(--color);
     padding: 10vw;
     font-size: 2em;
     flex-flow: column nowrap;
@@ -83,7 +87,14 @@ html, body{
 }
 
 button{
+    border-style: solid;
+    border-width: medium;
     background:#114747;
     font-size: 1.5rem;
     border-radius: 10px;
+    border-color: rgb(182, 136, 19);
+}
+
+button:hover{
+    background-color:var(--color);
 }
